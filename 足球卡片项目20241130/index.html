@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>运动队卡片</title>
+  <style>
+    .team-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      width: 200px;
+    }
+    .team-card h2 {
+      font-size: 1.5em;
+    }
+    .filters {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="filters">
+    <label for="sportFilter">选择运动类型: </label>
+    <select id="sportFilter">
+      <option value="all">所有</option>
+      <option value="Basketball">篮球</option>
+      <option value="Football">足球</option>
+      <option value="Baseball">棒球</option>
+    </select>
+  </div>
+
+  <div id="teamCardsContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

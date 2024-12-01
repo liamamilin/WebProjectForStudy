@@ -1,0 +1,11 @@
+#date-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}

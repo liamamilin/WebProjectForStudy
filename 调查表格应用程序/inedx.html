@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey below:</p>
+
+    <form id="survey-form">
+      <!-- Name Input -->
+      <label for="name" id="name-label">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email Input -->
+      <label for="email" id="email-label">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Number Input -->
+      <label for="number" id="number-label">Your Age:</label>
+      <input type="number" id="number" name="number" placeholder="Enter your age" min="18" max="100" required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">Select your favorite programming language:</label>
+      <select id="dropdown" name="dropdown" required>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Do you like coding?</label>
+      <div>
+        <input type="radio" id="yes" name="coding-love" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="coding-love" value="no">
+        <label for="no">No</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <label>Which technologies do you prefer? (Choose multiple):</label>
+      <div>
+        <input type="checkbox" id="html" name="technologies" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="technologies" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="technologies" value="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="technologies" value="python">
+        <label for="python">Python</label>
+      </div>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Enter your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
